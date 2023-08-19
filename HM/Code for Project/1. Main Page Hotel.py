@@ -5,7 +5,6 @@ from room import Roombooking
 from details import DetailsRoom
 
 
-# 45 min
 class HotelManagementSystem:
     def __init__(self,root):
         self.root=root
@@ -86,11 +85,7 @@ class HotelManagementSystem:
         lblimg1.place(x=0,y=370,width=230,height=190)
     
     
-    
-    
-    
-    
-    
+
     def cust_details(self):
         self.new_window=Toplevel(self.root)
         self.app=Cust_Win(self.new_window)
