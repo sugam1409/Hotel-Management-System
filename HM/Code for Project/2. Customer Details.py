@@ -11,8 +11,7 @@ class Cust_Win:
         self.root=root
         self.root.title("Hotel Management System")
         self.root.geometry("1050x550+230+220")
-        
-        
+             
         # ------------- Variable ---------------
         self.var_cust_ref=StringVar()
         x=random.randint(1000,9999) 
@@ -27,8 +26,7 @@ class Cust_Win:
         self.var_id_number=StringVar()
         self.var_contact_no=StringVar()
         self.var_email=StringVar()
-        
-        
+            
         #-------------Title---------------
         lbl_title=Label(self.root,text="ADD CUSTOMER DETAILS",font=("times new roman",18,"bold"),bg="black",fg="gold",bd=4,relief=RIDGE)
         lbl_title.place(x=0,y=0,width=1100,height=50)
@@ -196,16 +194,6 @@ class Cust_Win:
         
         self.Cust_details_Table["show"]="headings"
         
-        # self.Cust_details_Table.column("Customer Ref",width=100)
-        # self.Cust_details_Table.column("Customer Name",width=100)
-        # self.Cust_details_Table.column("Father's Name",width=100)
-        # self.Cust_details_Table.column("Gender",width=100)
-        # self.Cust_details_Table.column("Address",width=100)
-        # self.Cust_details_Table.column("Postal Code",width=100)
-        # self.Cust_details_Table.column("ID Proof Type",width=100)
-        # self.Cust_details_Table.column("ID Number",width=100)
-        # self.Cust_details_Table.column("Contact NO",width=100)
-        # self.Cust_details_Table.column("E-mail",width=100)
         self.Cust_details_Table.pack(fill=BOTH,expand=1)
         self.Cust_details_Table.bind("<ButtonRelease-1>",self.get_cursor)
         self.fetch_data()
