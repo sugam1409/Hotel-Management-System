@@ -213,22 +213,9 @@ class Roombooking:
                 self.room_table.heading("room_available",text="Room No")
                 self.room_table.heading("meal",text="Meal")
                 self.room_table.heading("no_of_days",text="No of Days")
-                # self.room_table.heading("ID Number",text="ID Number")
-                # self.room_table.heading("Contact NO",text="Contact NO")
-                # self.room_table.heading("E-mail",text="E-mail")
-                
+              
                 self.room_table["show"]="headings"
                 
-                # self.room_table.column("Customer Ref",width=100)
-                # self.room_table.column("Customer Name",width=100)
-                # self.room_table.column("Father's Name",width=100)
-                # self.room_table.column("Gender",width=100)
-                # self.room_table.column("Address",width=100)
-                # self.room_table.column("Postal Code",width=100)
-                # self.room_table.column("ID Proof Type",width=100)
-                # self.room_table.column("ID Number",width=100)
-                # self.room_table.column("Contact NO",width=100)
-                # self.room_table.column("E-mail",width=100)
                 self.room_table.pack(fill=BOTH,expand=1)
                 self.room_table.bind("<ButtonRelease-1>",self.get_cursor)
 
@@ -513,12 +500,7 @@ class Roombooking:
                     
                     lbl2=Label(show_dataframe,text=row,font=("arial",12,"bold"))
                     lbl2.grid(row=6,column=1,sticky=W)
-
-     
-        
-        
-        
-        
+  
 if __name__=="__main__":
     root=Tk()
     obj=Roombooking(root)
