@@ -96,26 +96,9 @@ class DetailsRoom:
                 self.room_table.heading("floor",text="Floor")
                 self.room_table.heading("room_no",text="Room No")
                 self.room_table.heading("room_type",text="Room Type")
-                # self.room_table.heading("room_type",text="Room Type")
-                # self.room_table.heading("room_available",text="Room No")
-                # self.room_table.heading("meal",text="Meal")
-                # self.room_table.heading("no_of_days",text="No of Days")
-                # self.room_table.heading("ID Number",text="ID Number")
-                # self.room_table.heading("Contact NO",text="Contact NO")
-                # self.room_table.heading("E-mail",text="E-mail")
-                
+                  
                 self.room_table["show"]="headings"
-                
-                # self.room_table.column("Customer Ref",width=100)
-                # self.room_table.column("Customer Name",width=100)
-                # self.room_table.column("Father's Name",width=100)
-                # self.room_table.column("Gender",width=100)
-                # self.room_table.column("Address",width=100)
-                # self.room_table.column("Postal Code",width=100)
-                # self.room_table.column("ID Proof Type",width=100)
-                # self.room_table.column("ID Number",width=100)
-                # self.room_table.column("Contact NO",width=100)
-                # self.room_table.column("E-mail",width=100)
+        
                 self.room_table.pack(fill=BOTH,expand=1)
                 self.room_table.bind("<ButtonRelease-1>",self.get_cursor)
                 self.fetch_data()
@@ -209,10 +192,7 @@ class DetailsRoom:
             self.var_floor.set("")
             self.var_room_no.set("")
             self.var_room_type.set("")         
-               
-             
-                
-                
+                                        
                 
 if __name__=="__main__":
     root=Tk()
